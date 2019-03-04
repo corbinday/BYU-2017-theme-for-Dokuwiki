@@ -1,7 +1,7 @@
-base     dokuwiki
-author   Anika Henke
-email    anika@selfthinker.org
-date     2015-07-26
-name     DokuWiki Template
-desc     DokuWiki's default template since 2012
-url      http://www.dokuwiki.org/template:dokuwiki
+base     BYU 2017 theme
+author   Corbin Day	
+email    corbin_day@byu.edu
+date     2019-03-05
+name     BYU 2017 Theme
+desc     Template for the BYU 2017 Theme
+url      http://www.dokuwiki.org/template:byu_2017_theme

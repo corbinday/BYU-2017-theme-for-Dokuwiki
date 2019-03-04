@@ -44,7 +44,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 
             .page-content {
                 flex-grow: 1;
-                align-items: center;
+                margin-top: 70px;
             }
             </style>
 
@@ -102,7 +102,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
         </byu-header>
 
         <div class="page-content">
-                <h1 style="text-align:center;"> HOW CAN WE HELP? </h1>
+                
             <div id="dokuwiki__site"><div id="dokuwiki__top" class="site <?php echo tpl_classes(); ?> <?php
                 echo ($showSidebar) ? 'showSidebar' : ''; ?> <?php echo ($hasSidebar) ? 'hasSidebar' : ''; ?>">
 
@@ -163,6 +163,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
             <div class="no"><?php tpl_indexerWebBug() /* provide DokuWiki housekeeping, required in all templates */ ?></div>
             <div id="screen__mode" class="no"></div><?php /* helper to detect CSS media query in script.js */ ?>
         </div>
+
         <byu-footer></byu-footer>
     </div>
 </body>
