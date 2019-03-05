@@ -1,4 +1,4 @@
-base     BYU 2017 theme
+base     BYU_2017_theme
 author   Corbin Day	
 email    corbin_day@byu.edu
 date     2019-03-05
