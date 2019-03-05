@@ -66,9 +66,9 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                 if (!empty($_SERVER['REMOTE_USER'])) {
                     //Logout Button
                     echo "<a slot=\"actions\" href=\"javascript:{}\" onclick=\"document.getElementById('log_out').submit(); return false;\">Log Out
-                                <form id=\"log_out\" method=\"get\" action=\"/dokuwiki/doku.php\">
+                                <form id=\"log_out\" method=\"get\" action=\"/doku.php\">
                                     <input type=\"hidden\" name=\"do\" value=\"logout\">
-                                    <input type=\"hidden\" name=\"sectok\" value=\"756fc1becd1e22260cc6a2f74d2e2715\">
+                                    <input type=\"hidden\" name=\"sectok\" value=\"\">
                                     <input type=\"hidden\" name=\"id\" value=\"start\">
                                 </form>
                         </a>";
@@ -76,7 +76,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                 if (empty($_SERVER['REMOTE_USER'])) {
                     //Login Button
                     echo "<a slot=\"actions\" href=\"javascript:{}\" onclick=\"document.getElementById('log_in').submit(); return false;\">Log In
-                                <form id=\"log_in\" method=\"get\" action=\"/dokuwiki/doku.php\">
+                                <form id=\"log_in\" method=\"get\" action=\"/doku.php\">
                                     <input type=\"hidden\" name=\"do\" value=\"login\">
                                     <input type=\"hidden\" name=\"sectok\" value=\"\">
                                     <input type=\"hidden\" name=\"id\" value=\"start\">
@@ -86,16 +86,16 @@ $showSidebar = $hasSidebar && ($ACT=='show');
             ?> 
 
             <!--font size css seems to be the cause of the disalignment of the search button and search box PLEASE FIX -->
-            <byu-search slot="search" action="navigate" action-target="http://127.0.0.1/dokuwiki/doku.php?do=search&id=start&q=${search}" method="get" placeholder="Search"></byu-search>
+            <byu-search slot="search" action="navigate" action-target="/dokuwiki/doku.php?do=search&id=start&q=${search}" method="get" placeholder="Search"></byu-search>
 
             <byu-menu slot="nav" collapsed>
-                <a href="/dokuwiki/doku.php?id=start">Home</a>
-                <a href= "/dokuwiki/doku.php?id=start&do=index">Sitemap</a>
-                <a href="/dokuwiki/doku.php?id=start&do=recent">Recent Changes</a>
-                <a href="http://127.0.0.1/dokuwiki/doku.php?id=start&do=media&ns=">Media Manager</a>
+                <a href="/doku.php?id=start">Home</a>
+                <a href= "/doku.php?id=start&do=index">Sitemap</a>
+                <a href="/doku.php?id=start&do=recent">Recent Changes</a>
+                <a href="/doku.php?id=start&do=media&ns=">Media Manager</a>
                 <?php //Admin tools link
                     if (!empty($_SERVER['REMOTE_USER']) && $INFO['isadmin']) {
-                        echo "<a href=\"http://127.0.0.1/dokuwiki/doku.php?do=admin&id=user%3Aadmin%3Astart\" target=\"_self\">Admin</a>";
+                        echo "<a href=\"/dokuwiki/doku.php?do=admin&id=user%3Aadmin%3Astart\" target=\"_self\">Admin</a>";
                     }
                 ?>
             </byu-menu>
