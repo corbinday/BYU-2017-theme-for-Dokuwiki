@@ -96,7 +96,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                 <a href="/doku.php?id=start&do=media&ns=">Media Manager</a>
                 <?php //Admin tools link
                     if (!empty($_SERVER['REMOTE_USER']) && $INFO['isadmin']) {
-                        echo "<a href=\"/dokuwiki/doku.php?do=admin&id=user%3Aadmin%3Astart\" target=\"_self\">Admin</a>";
+                        echo "<a href=\"/doku.php?do=admin&id=user%3Aadmin%3Astart\" target=\"_self\">Admin</a>";
                     }
                 ?>
             </byu-menu>
