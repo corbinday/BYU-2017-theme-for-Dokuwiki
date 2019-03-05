@@ -55,7 +55,8 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 <body>
     <div class="containing-element">
         <byu-header full-width>
-            <h1 slot="site-title" >ECEn Support Wiki</h1> 
+            
+            <h1 slot="site-title" ><?php tpl_link(wl(),$conf['title']) ?></h1> 
 
             <!--BUTTONS-->
             <?php
