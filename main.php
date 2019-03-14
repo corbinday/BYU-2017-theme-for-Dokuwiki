@@ -107,8 +107,8 @@ $showSidebar = $hasSidebar && ($ACT=='show');
             <div id="dokuwiki__site"><div id="dokuwiki__top" class="site <?php echo tpl_classes(); ?> <?php
                 echo ($showSidebar) ? 'showSidebar' : ''; ?> <?php echo ($hasSidebar) ? 'hasSidebar' : ''; ?>">
 
-            <!--REMOVE THIS -->
-            <?php //include('tpl_header.php') ?>
+            <!--Trace -->
+            <?php tpl_breadcrumbs() ?>
 
                 <div class="wrapper group">
 
