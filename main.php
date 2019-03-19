@@ -62,7 +62,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
             <?php
                 /*if (!empty($_SERVER['REMOTE_USER']) && $INFO['isadmin']) {
                     //Admin tools button
-                    echo "<a slot=\"actions\" href=\"http://127.0.0.1/dokuwiki/doku.php?do=admin&id=user%3Aadmin%3Astart\" target=\"_self\">Admin</a>";
+                    echo "<a slot=\"actions\" href=\"./doku.php?do=admin&id=user%3Aadmin%3Astart\" target=\"_self\">Admin</a>";
                 }*/
                 if (!empty($_SERVER['REMOTE_USER'])) {
                     //Logout Button
@@ -87,7 +87,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
             ?> 
 
             <!--font size css seems to be the cause of the disalignment of the search button and search box PLEASE FIX -->
-            <byu-search slot="search" action="navigate" action-target="/dokuwiki/doku.php?do=search&id=start&q=${search}" method="get" placeholder="Search"></byu-search>
+            <byu-search slot="search" action="navigate" action-target="./doku.php?do=search&id=start&q=${search}" method="get" placeholder="Search"></byu-search>
 
             <byu-menu slot="nav" collapsed>
                 <a href="./doku.php?id=start">Home</a>
