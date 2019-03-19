@@ -66,7 +66,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                 }*/
                 if (!empty($_SERVER['REMOTE_USER'])) {
                     //Logout Button
-                    echo "<a slot=\"actions\" href=\"javascript:{}\" onclick=\"document.getElementById('log_out').submit(); return false;\">Log Out
+                    echo "<a slot=\"actions\" href=\"./doku.php?id=start&amp;do=logout\" onclick=\"document.getElementById('log_out').submit(); return false;\">Log Out
                                 <form id=\"log_out\" method=\"get\" action=\"./doku.php\">
                                     <input type=\"hidden\" name=\"do\" value=\"logout\">
                                     <input type=\"hidden\" name=\"sectok\" value=\"\">
@@ -76,7 +76,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                     }
                 if (empty($_SERVER['REMOTE_USER'])) {
                     //Login Button
-                    echo "<a slot=\"actions\" href=\"javascript:{}\" onclick=\"document.getElementById('log_in').submit(); return false;\">Log In
+                    echo "<a slot=\"actions\" href=\"./doku.php?do=login&sectok=&id=start\" onclick=\"document.getElementById('log_in').submit(); return false;\">Log In
                                 <form id=\"log_in\" method=\"get\" action=\"./doku.php\">
                                     <input type=\"hidden\" name=\"do\" value=\"login\">
                                     <input type=\"hidden\" name=\"sectok\" value=\"\">
