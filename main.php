@@ -96,7 +96,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                 <a href="./doku.php?id=start&do=media&ns=">Media Manager</a>
                 <?php //User Profile link
                     if (!empty($_SERVER['REMOTE_USER']) && $auth instanceof auth_plugin_authplain) {
-                        echo "<a href=\"./doku.php?id=user:admin:start&do=profile\" target=\"_self\">User Profile</a>";
+                        echo "<a href=\"./doku.php?id=user:admin:start&do=profile\" target=\"_self\">Update Profile</a>";
                     }
                 ?>
                 <?php //Admin tools link
